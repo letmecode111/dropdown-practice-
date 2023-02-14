@@ -15,11 +15,11 @@ public class Amazondropdown extends Apputils{
 
 		utils.Apputils.launchapp("https://amazon.com");
 	    Select amaz = new Select(driver.findElement(By.id("searchDropdownBox")));
-	   List<WebElement> amazlist= amaz.getOptions();
-	    
-	   int size1= amazlist.size();
+	    amaz.selectByVisibleText("Books");
 	   
-	   System.out.println(size1);
+	   
+	  
+	   
 	}
 }
 
